@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import _ from 'lodash'; // TO DO
+
 // import 'typeface-roboto';
 
 import Button from '@material-ui/core/Button';
@@ -11,7 +13,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+          <p className="App-para">
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a className="App-link"
@@ -21,7 +23,8 @@ class App extends Component {
               Learn React
           </a>
           <Button variant="contained" 
-            color="primary">
+            color="primary"
+            className="primary-custom">
               Hello World
           </Button>
         </header>
